@@ -128,7 +128,7 @@ jobs:
       - name: Tag and Push docker image
         shell: bash
         run: |
-          docker tag novu-$SERVICE_COMMON_NAME ghcr.io/$REGISTRY_OWNER/${{ matrix.name }}:${{ env.LATEST_VERSION }}
-          docker tag novu-$SERVICE_COMMON_NAME ghcr.io/$REGISTRY_OWNER/${{ matrix.name }}:latest
-          docker push ghcr.io/$REGISTRY_OWNER/${{ matrix.name }}:${{ env.LATEST_VERSION }}
-          docker push ghcr.io/$REGISTRY_OWNER/${{ matrix.name }}:latest
+          docker tag novu-$SERVICE_COMMON_NAME ghcr.io/$REGISTRY_OWNER/${{ matrix.name }}:1.1
+          docker tag novu-$SERVICE_COMMON_NAME ghcr.io/$REGISTRY_OWNER/${{ matrix.name }}:1.1
+          docker push ghcr.io/$REGISTRY_OWNER/${{ matrix.name }}:1.1
+          docker push ghcr.io/$REGISTRY_OWNER/${{ matrix.name }}:1.1
